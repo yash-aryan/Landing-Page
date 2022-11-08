@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============= */
+/* Sections */
+/* ============= */
+
+.Nav-bar, .Hero {
+    padding: 16px 20% 5%;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Nav-bar {
+    align-items: center;
+
+}
+/* ============= */
+/* Components */
+/* ============= */
+
+/* Nav-bar */
+
+.Nav-bar ul {
+    display: flex;
+    gap: 32px;
+}
+
+.Nav-bar-logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+/* Hero */
+
+.Hero-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Hero-right{
+    background-color: #e5e7eb50;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero-title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.button {
+    width: fit-content;
+    padding: 8px 32px;
+    background-color:#3882f6;
+    border-radius: 8px;
+}
+
+/* General */
+
+p, ul, .button {
+    padding: 0;
+    margin: 0;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+p {
+    flex-wrap: wrap;
+}
