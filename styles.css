@@ -7,7 +7,7 @@ html {
     box-sizing: inherit;
 }
 
-body {
+body, .Sec1 {
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,7 @@ body {
 /* ============= */
 
 .Nav-bar, .Hero {
-    padding: 16px 20% 5%;
+    padding: 16px 15% 5%;
     background-color: #1F2937;
     display: flex;
     flex-direction: row;
@@ -28,6 +28,19 @@ body {
     align-items: center;
 
 }
+
+.Sec1 {
+    padding: 48px 15% 5%;
+    gap: 48px;
+}
+
+.Sec2 {
+    background-color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ============= */
 /* Components */
 /* ============= */
@@ -47,7 +60,8 @@ body {
 /* Hero */
 
 .Hero-left {
-    width: 30%;
+    width: 50%;
+    margin-right: 32px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -55,8 +69,7 @@ body {
 
 .Hero-right{
     background-color: #e5e7eb50;
-    width: 600px;
-    height: 200px;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,16 +81,58 @@ body {
     font-weight: 900;
 }
 
-.button {
-    width: fit-content;
-    padding: 8px 32px;
+.Hero-button {
+    padding: 8px 24px;
     background-color:#3882f6;
+    color: #e5e7eb;
+    font-size: 18px;
     border-radius: 8px;
+    width: fit-content;
+    flex-basis: auto;
+}
+
+/* Section 1 */
+
+.Sec1-title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    align-self: center;
+}
+
+.Sec1-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sec1-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.Sec1-card div {
+    border: 2px solid #3882f6;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Section 2 */
+
+.Sec2 div {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 15% 10%;
+    gap: 16px;
 }
 
 /* General */
 
-p, ul, .button {
+p, ul {
     padding: 0;
     margin: 0;
     color: #e5e7eb;
@@ -91,4 +146,24 @@ ul {
 
 p {
     flex-wrap: wrap;
+}
+
+.Sec1-card p {
+    color: #1f2937;
+    text-align: center;
+    width: 200px;
+}
+
+.Sec2-quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.Sec2-writer {
+    color: #1f2937;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
 }
